@@ -1,1 +1,64 @@
-<p>products works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductNavbar</title>
+</head>
+<body class="min-h-screen bg-white1">
+    <header class="absolute w-full bg-bgNavbar shadow-md">
+        <div class="container m-auto py-3 lg:py-4 lg:h-auto">
+            <div class="flex flex-wrap items-center justify-between">
+                <div class="relative z-10 w-full flex items-center justify-between lg:w-auto">
+                    <!-- logo -->
+                    <a href="">
+                        <img src="https://media.discordapp.net/attachments/927170767211360327/927170810093924372/logo.png" alt="" class="">
+                    </a>
+                    <!-- btn menu -->
+                    <button class="relative w-10 h-10 lg:hidden">
+                        <div class="inset-0 w-6 h-0.5 m-auto rounded bg-white1 transition duration-300"></div>
+                        <div class="inset-0 w-6 h-0.5 mt-2 ml-2 rounded bg-white1 transition duration-300"></div>
+                    </button>
+                </div>
+
+                <div id="navlinks" class="hidden w-full px-6 bg-bgNavbar lg:block lg:bg-transparent lg:w-auto">
+                    <ul class="pt-4 pb-6 text-lg lg:flex lg:items-center lg:space-x-8 lg:pt-0 lg:pb-0">
+                        <li>
+                            <a href="#" class="text-greenAgro hover:text-greenContactUs block py-3 transition" routerLink="/landingPage">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-greenAgro hover:text-greenContactUs block py-3 transition" routerLink="/products">
+                                <span>Products</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-greenAgro hover:text-greenContactUs block py-3 transition" routerLink="/aboutUs">
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-greenAgro hover:text-greenContactUs block py-3 transition" routerLink="/termsAndCondition">
+                                <span>Terms and Condition</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-greenAgro hover:text-greenContactUs block py-3 transition" routerLink="/gallery">
+                                <span>Gallery</span>
+                            </a>
+                        </li>
+                        <li class="mt-4 lg:mt-0">
+                            <a href="" class="block py-3 rounded w-full lg:w-full bg-greenContactUs hover:bg-bgNavbar focus:bg-bgNavbar active:bg-bgNavbar transition" >
+                                <span class="block lg:px-5 font-semibold text-white1 text-center">Contact Us</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
