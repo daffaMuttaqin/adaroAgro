@@ -1,18 +1,11 @@
 module.exports = {
-  content: [],
+  content: ['./index.html', './page/products.html'],
   purge: {
-    enabled: true,
-    content: [
-      './public/index.html',
-      './src/**/*.{html,js}',
-    ],
+    content : ['./**/*.html', './page/**/*.html'],
     safelist : [
       'rotate-45',
       '-rotate-45'
     ]
-    // content: ['./src/app/app.component.html', './src/app/landing-page/landing-page.component.html', './src/app/about-us/about-us.component.html', 
-    // './src/app/gallery/gallery.component.html', './src/app/products/products.component.html', './src/app/terms-and-condition/terms-and-condition.component.html', 
-    // './src/app/layout/footer/footer.component.html', './src/app/layout/menu/menu.component.html']
   },
   theme: {
     colors: {
@@ -25,6 +18,11 @@ module.exports = {
       'bgNavbar': '#131313'
     },
     extend: {},
+  },
+  variants: {
+    extend: {
+      padding: ['hover'],
+    },
   },
   plugins: [],
 }
