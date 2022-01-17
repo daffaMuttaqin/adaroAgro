@@ -17,7 +17,12 @@ module.exports = {
       'greenContactUs': '#1FC916',
       'bgNavbar': '#131313'
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'montserrat' : 'Montserrat',
+        'poppins': 'Poppins',
+      },
+    },
   },
   variants: {
     extend: {

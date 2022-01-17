@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="./tailwind/output.css">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- npx tailwindcss -i ./styles.css -o ./tailwind/output.css --watch -->
     <title>Adaro Agro</title>
 </head>
 
 <body class="min-h-screen bg-white1">
     <!-- Navbar -->
-    <header class="absolute w-full bg-bgNavbar shadow-md">
+    <header class="absolute w-full z-40 bg-bgNavbar shadow-md">
         <div class="container m-auto py-3 lg:py-4 lg:h-auto">
             <div class="flex flex-wrap items-center justify-between">
-                <div class="relative z-10 w-full flex items-center justify-between lg:w-auto">
+                <div class="relative z-50 w-full flex items-center justify-between lg:w-auto">
                     <!-- logo -->
                     <a href="">
                         <img src="./assets/img/logo.png" alt="Logo Adaro Agro" class="w-14 px-2 lg:px-0 ">
@@ -28,36 +32,36 @@
                     </button>
                 </div>
 
-                <div id="navlinks" class="hidden w-full px-6 bg-bgNavbar lg:block lg:bg-transparent lg:w-auto">
+                <div id="navlinks" class="hidden z-50 w-full px-6 bg-bgNavbar lg:block lg:bg-transparent lg:w-auto">
                     <ul class="pt-4 pb-6 text-lg lg:flex lg:items-center lg:space-x-10 lg:pt-0 lg:pb-0 duration-300">
                         <li>
-                            <a href="./index.html" class="text-greenAgro border-b-2 border-transparent lg:border-greenAgro  hover:text-greenAgro block transition duration-300">
+                            <a href="./index.html" class="text-greenAgro font-poppins border-b-2 border-transparent lg:border-greenAgro  hover:text-greenAgro block transition duration-300">
                                 <span>Home</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./products.html" class="text-white1 border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
+                            <a href="./products.html" class="text-white1 font-poppins border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
                                 <span>Products</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./aboutUs.html" class="text-white1 border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
+                            <a href="./aboutUs.html" class="text-white1 font-poppins border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
                                 <span>About Us</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./termsAndCondition.html" class="text-white1 border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
+                            <a href="./termsAndCondition.html" class="text-white1 font-poppins border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
                                 <span>Terms and Condition</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./gallery.html" class="text-white1 border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
+                            <a href="./gallery.html" class="text-white1 font-poppins border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
                                 <span>Gallery</span>
                             </a>
                         </li>
                         <li class="mt-4 lg:mt-0">
                             <a href="" class="block py-3 rounded w-full lg:w-full bg-greenContactUs hover:bg-bgNavbar focus:bg-bgNavbar active:bg-bgNavbar transition" >
-                                <span class="block lg:px-5 font-semibold text-white1 text-center">Contact Us</span>
+                                <span class="block lg:px-5 font-semibold text-white1 font-poppins text-center">Contact Us</span>
                             </a>
                         </li>
                         
@@ -66,9 +70,68 @@
             </div>
         </div>
     </header>
-    <script src="./assets/js/add.js"></script>
 
     <!-- Main Content -->
-    <h1 class="absolute text-greenAgro">sdjndskjn</h1>
+    <div class="">  
+        <!-- Img-slider -->
+        <!-- <div id="img-slider" class="relative min-w-full lg:mt-36 mt-28 bg-greenAgro">
+            img 1
+            <div id="slide" class="absolute z-10 min-w-full">
+                <img class="z-10 w-full" src="/assets/img/img_1.jpg" alt="">
+                <div id="info" class="absolute top-1/2 left-1/2 -translate-x-1/2">
+                    <h2 class="text-white1 font-montserrat font-medium text-6xl uppercase tracking-wide">ADARO AGRO</h2>
+                    <p class="text-3xl text-white1 font-montserrat font-thin px-12"> <em>"We bring local farmer <br> products to the world"</em></p>
+                </div>
+            </div> 
+            Img 2
+            <div id="slide" class="absolute z-10 min-w-full hidden">
+                <img class="z-10 w-full" src="/assets/img/img_2.jpg" alt="">
+                <div id="info" class="absolute top-1/2 left-1/2 -translate-x-1/2">
+                    <h2 class="text-white1 font-montserrat font-medium text-6xl uppercase tracking-wide">ADARO AGRO</h2>
+                    <p class="text-3xl text-white1 font-montserrat font-thin px-12"> <em>"We bring local farmer <br> products to the world"</em></p>
+                </div>
+            </div>
+            img 3
+            <div id="slide" class="absolute z-10 min-w-full hidden">
+                <img class="z-10 w-full" src="/assets/img/img_1.jpg" alt="">
+                <div id="info" class="absolute top-1/2 left-1/2 -translate-x-1/2">
+                    <h2 class="text-white1 font-montserrat font-medium text-6xl uppercase tracking-wide">ADARO AGRO</h2>
+                    <p class="text-3xl text-white1 font-montserrat font-thin px-12"> <em>"We bring local farmer <br> products to the world"</em></p>
+                </div>
+            </div>
+            
+            Navigation
+            
+        </div>
+        <div id="navigation" class="flex absolute z-20 -bottom-12 left-1/2 -translate-x-1/2">
+            <div id="btn" class="bg-white1 w-3 h-3 m-3 rounded-md cursor-pointer"></div>
+            <div id="btn" class="bg-white1 w-3 h-3 m-3 rounded-md cursor-pointer"></div>
+            <div id="btn" class="bg-white1 w-3 h-3 m-3 rounded-md cursor-pointer"></div>
+        </div> -->
+    
+        <div class="swiper w-full">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper mt-24">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="object-center object-cover w-full h-full" src="./assets/img/img_1.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="object-center object-cover w-full h-full" src="./assets/img/img_2.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="object-center object-cover w-full h-full" src="./assets/img/img_3.jpg" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./assets/js/add.js"></script>
+    <script src="./assets/js/swiper.js"></script>
 </body>
 </html>
