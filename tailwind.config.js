@@ -15,7 +15,8 @@ module.exports = {
       'white1':'#ffffff',
       'greenAgro': '#61CE70',
       'greenContactUs': '#1FC916',
-      'bgNavbar': '#131313'
+      'bgNavbar': '#131313',
+      'blackText' : '#111117',
     },
     extend: {
       fontFamily: {
