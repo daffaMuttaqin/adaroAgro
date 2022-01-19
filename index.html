@@ -17,7 +17,7 @@
 
 <body class="">
     <!-- Navbar -->
-    <header class="absolute w-full z-30 bg-bgNavbar shadow-md">
+    <header class="fixed w-full z-30 bg-bgNavbar shadow-md">
         <div class="container m-auto py-3 lg:py-4 lg:h-auto">
             <div class="flex flex-wrap items-center justify-between">
                 <div class="relative z-50 w-full flex items-center justify-between lg:w-auto">
@@ -112,26 +112,48 @@
         <!-- End Image Slider -->
         
         <!-- Grid -->
-        <div class="h-screen w-full bg-white1 absolute">
-            <div class="grid lg:grid-cols-2 lg:gap-2 grid-cols-1 w-full mt-20">
-                <div class="p-8 lg:px-28">
-                    <img src="./assets/img/container.jpg" alt="" class="w-auto rounded-3xl">
+        <div class="h-screen w-full bg-white1 absolute bg-local bg-no-repeat bg-left-top lg:mt-72 mt-20" style="background-image: url('./assets/img/bg_grid.png');">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 lg:gap-2 grid-cols-1 w-full">
+                <div class="p-8 lg:px-28 ">
+                    <img src="./assets/img/container.jpg" alt="" class="lg:w-auto  rounded-3xl">
                 </div>
-                <div class="px-8 lg:py-8 lg:pr-28 flex flex-col justify-between">
-                    <h1 class="font-montserrat font-extrabold text-greenAgro lg:text-5xl md:text-3xl text-xl">About Us</h1>
-                    <p class="text-blackText font-poppins lg:text-2xl text-justify leading-8">PT Adaro Global Sinergi (Adaro Agro) is a company engaged in the export trade which currently focuses on agricultural products.</p>
-                    <p class="text-blackText font-poppins lg:text-2xl text-justify leading-8">We are proud to be able to provide supplies of Indonesian agricultural products from local farmers and other agricultural commodities to meet 
+                <div class="px-8 lg:py-8 lg:pr-28 flex flex-col justify-between bg-white1">
+                    <h1 class="font-montserrat font-extrabold text-greenOurProduct lg:text-5xl md:text-3xl text-2xl">About Us</h1>
+                    <p class="text-blackText font-poppins lg:text-2xl md:text-xl text-sm text-justify leading-8">PT Adaro Global Sinergi (Adaro Agro) is a company engaged in the export trade which currently focuses on agricultural products.</p>
+                    <p class="text-blackText font-poppins lg:text-2xl md:text-xl text-sm text-justify leading-8">We are proud to be able to provide supplies of Indonesian agricultural products from local farmers and other agricultural commodities to meet 
                        individual client needs. We not just supply a product to you but also we supply a collection of values including trust, satisfaction, credit, and 
                        quality to you.
                     </p>
                     <a href="./aboutUs.html" class="text-white1 text-center font-montserrat font-extrabold bg-greenAgro p-4 rounded-lg">MORE INFORMATION</a>
                 </div>
             </div>
+
+        <!-- Our Products -->
+            <div class="w-full h-full absolute text-center lg:mt-72 mt-10">
+                <h1 class="font-montserrat font-extrabold text-greenOurProduct lg:text-5xl md:text-3xl text-2xl">Our Products</h1>
+
+                <div class="grid lg:grid-rows-2 md:grid-rows-2 grid-rows-6 grid-flow-col gap-4 gap-y-3 w-full mt-20">
+                    <div class="bg-bgNavbar ">
+                        <img src="./assets/img/Betel Nuts.png" alt="" class="w-72 h-72 mx-56 rounded-xl justify-items-center">
+                    </div>
+                    <div class=" ">
+                        <h1 class="text-greenAgro font-montserrat font-bold lg:text-3xl">Betel Nut</h1>
+                    </div>
+                    <div class="bg-greenAgro ">
+                        <img src="./assets/img/Cinnamon Sticks.png" alt="" class="w-72 h-72 rounded-xl justify-items-center">
+                    </div>
+                    <div class=" ">
+                        <h1 class="text-greenAgro font-montserrat font-bold lg:text-3xl">Cinnamon Sticks</h1>
+                    </div>
+                    <div class=" bg-bgNavbar">
+                        <img src="./assets/img/Cocoa Beans.png" alt="" class="w-72 h-72 rounded-xl justify-items-center">
+                    </div>
+                    <div class=" ">
+                        <h1 class="text-greenAgro font-montserrat font-bold lg:text-3xl">Cocoa Beans</h1>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        
-
-
     
     </div>
 

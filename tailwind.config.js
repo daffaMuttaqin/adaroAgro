@@ -15,6 +15,7 @@ module.exports = {
       'white1':'#ffffff',
       'greenAgro': '#61CE70',
       'greenContactUs': '#1FC916',
+      'greenOurProduct': '#99E369',
       'bgNavbar': '#131313',
       'blackText' : '#111117',
     },
