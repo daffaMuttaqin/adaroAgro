@@ -11,6 +11,16 @@
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5VMM94XDC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-Z5VMM94XDC');
+    </script>
+    
     <!-- npx tailwindcss -i ./styles.css -o ./tailwind/output.css --watch -->
     <title>Adaro Agro</title>
 </head>
@@ -115,7 +125,7 @@
             <!-- Grid -->
             <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-2 w-full">
                 <div class="p-8 lg:px-28 ">
-                    <img src="./assets/img/container.jpg" alt="" class="lg:w-auto  rounded-3xl">
+                    <img src="./assets/img/container.jpg" alt="" class="lg:w-auto rounded-3xl">
                 </div>
                 <div class="px-8 lg:py-8 lg:pr-28 flex flex-col justify-between bg-white">
                     <h1 class="font-montserrat font-extrabold text-greenOurProduct lg:text-5xl md:text-3xl text-2xl">About Us</h1>
@@ -124,7 +134,8 @@
                        individual client needs. We not just supply a product to you but also we supply a collection of values including trust, satisfaction, credit, and 
                        quality to you.
                     </p>
-                    <a href="./aboutUs.html" class="text-white text-center font-montserrat font-extrabold bg-greenAgro p-4 rounded-lg">MORE INFORMATION</a>
+                    <!-- Btn More Information -->
+                    <a href="./aboutUs.html" class="text-white text-center font-montserrat font-extrabold bg-greenAgro hover:bg-greenOurProduct p-4 rounded-lg duration-300">MORE INFORMATION</a>
                 </div>
             </div>
 
@@ -144,8 +155,8 @@
                         <h1 class="text-greenAgro font-montserrat font-bold lg:text-3xl text-xl py-4">Betel Nut</h1>
                         <div class="w-72 m-auto bg-white">
                             <p class="text-blackText font-poppins lg:text-left text-justify lg:text-xl md:text-xl text-sm leading-8">Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod tempor incididunt ut labore et <span class="lg:text-gray-300 md:text-gray-300 text-blackText">dolore magna <span class="lg:text-gray-300 text-gray-300">aliqua...</span></span></p>
-                            <a href="./products.html" class="flex text-blackSeeDetails lg:text-xl text-sm py-4 font-bold">SEE DETAILS
-                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 lg:w-7 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <a href="./products.html" class="flex text-blackSeeDetails lg:text-xl text-sm py-4 font-bold hover:text-2xl duration-300">SEE DETAILS
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 lg:w-7 w-5 hover:w-10 duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </a>
@@ -160,8 +171,8 @@
                         <h1 class="text-greenAgro font-montserrat font-bold lg:text-3xl text-xl py-4">Cinnamon Sticks</h1>
                         <div class="w-72 m-auto bg-white">
                             <p class="text-blackText font-poppins lg:text-left text-justify lg:text-xl md:text-xl text-sm leading-8">Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod tempor incididunt ut labore et <span class="lg:text-gray-300 md:text-gray-300 text-blackText">dolore magna <span class="lg:text-gray-300 text-gray-300">aliqua...</span></span></p>
-                            <a href="./products.html" class="flex text-blackSeeDetails lg:text-xl text-sm py-4 font-bold">SEE DETAILS
-                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 lg:w-7 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <a href="./products.html" class="flex text-blackSeeDetails lg:text-xl text-sm py-4 font-bold hover:text-2xl duration-300">SEE DETAILS
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 lg:w-7 w-5 hover:w-10 duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </a>
@@ -176,8 +187,8 @@
                         <h1 class="text-greenAgro font-montserrat font-bold lg:text-3xl text-xl py-4">Cocoa Beans</h1>
                         <div class="w-72 m-auto bg-white">
                             <p class="text-blackText font-poppins lg:text-left text-justify lg:text-xl md:text-xl text-sm leading-8">Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod tempor incididunt ut labore et <span class="lg:text-gray-300 md:text-gray-300 text-blackText">dolore magna <span class="lg:text-gray-300 text-gray-300">aliqua...</span></span></p>
-                            <a href="./products.html" class="flex text-blackSeeDetails lg:text-xl text-sm py-4 font-bold">SEE DETAILS
-                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 lg:w-7 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <a href="./products.html" class="flex text-blackSeeDetails lg:text-xl text-sm py-4 font-bold hover:text-2xl duration-300">SEE DETAILS
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 lg:w-7 w-5 hover:w-10 duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </a>
@@ -189,7 +200,7 @@
                 <div class="w-full absolute lg:mt-20 mt-10 ">
                     <div>
                         <a  href="" style="background-image: url(./assets/img/collaborate.png);" 
-                            class="bg-greenAgro text-white w-auto m-auto font-montserrat font-semibold lg:p-8 p-3 rounded-2xl lg:text-4xl md:text-2xl text-md bg-no-repeat bg-left hover:bg-opacity-80 duration-300">
+                            class="bg-greenAgro hover:bg-greenOurProduct text-white w-auto m-auto font-montserrat font-semibold lg:p-8 p-3 rounded-2xl lg:text-4xl md:text-2xl text-md bg-no-repeat bg-left hover:bg-opacity-80 duration-300">
                             Ready To Collaborate? <span class="font-extrabold">Contact Us Now</span>
                         </a>
 
@@ -213,22 +224,28 @@
                                 <div class="mt-14">
                                     <img src="./assets/img/logo.png" alt="Adaro Agro" class="h-20 m-auto">
                                     <div class="flex m-autu justify-center mt-4">
-                                        <img src="./assets/img/Instagram.png" alt="" class="w-8 mx-5">
-                                        <img src="./assets/img/facebook.png" alt="" class="w-8 mx-5">
-                                        <img src="./assets/img/linkedin.png" alt="" class="w-8 mx-5">
+                                        <a href="https://www.instagram.com/adaroagro/">
+                                            <img src="./assets/img/Instagram.png" alt="" class="w-8 mx-5 hover:w-9 duration-200">
+                                        </a>
+                                        <a href="https://www.facebook.com/people/Adaro-Agro/100076914482887/">
+                                            <img src="./assets/img/facebook.png" alt="" class="w-8 mx-5 hover:w-9 duration-200">
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/pt-adaro-global-sinergi/">
+                                            <img src="./assets/img/linkedin.png" alt="" class="w-8 mx-5 hover:w-9 duration-200">
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="mt-14 font-poppins font-normal text-sm text-left">
-                                    <div class="font-montserrat font-extrabold pb-2">Terms & Conditions</div>
-                                    <div class="py-2">Payment Methods</div>
-                                    <div class="py-2">Order Terms</div>
-                                    <div class="py-2">Sample Orders</div>
-                                    <div class="py-2">Price Terms</div>
+                                <div class="flex flex-col mt-14 font-poppins font-normal text-sm text-left">
+                                    <div class="font-montserrat text-base font-extrabold pb-2">Terms & Conditions</div>
+                                    <a href="./termsAndCondition.html" class="pb-2 w-fit text-sm hover:text-base duration-300">Payment Methods</a>
+                                    <a href="./termsAndCondition.html" class="pb-2 w-fit text-sm hover:text-base duration-300">Order Terms</a>
+                                    <a href="./termsAndCondition.html" class="pb-2 w-fit text-sm hover:text-base duration-300">Sample Orders</a>
+                                    <a href="./termsAndCondition.html" class=" w-fit text-sm hover:text-base duration-300">Price Terms</a>
                                 </div>
-                                <div class="mt-14 font-poppins font-normal text-sm text-left">
-                                    <div class="font-montserrat font-extrabold pb-2">About Us</div>
-                                    <div class="py-2">News</div>
-                                    <div class="py-2">Products</div>
+                                <div class="flex flex-col mt-14 font-poppins font-normal text-sm text-left">
+                                    <div class="font-montserrat text-base font-extrabold pb-2">About Us</div>
+                                    <a href="/aboutUs.html" class="pb-2 w-fit text-sm hover:text-base duration-300">News</a>
+                                    <a href="/products.html" class="w-fit text-sm hover:text-base duration-300">Products</a>
                                 </div>
                                 <div class="mt-14  w-fit">
                                     <div class="grid grid-cols-5 grid-flow-row gap-1">

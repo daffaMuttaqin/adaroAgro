@@ -18,6 +18,7 @@ module.exports = {
       white: colors.white,
 
       'greenAgro': '#61CE70',
+      'hoverGreenAgro': '#54C363',
       'greenContactUs': '#1FC916',
       'greenOurProduct': '#99E369',
       'bgNavbar': '#131313',
