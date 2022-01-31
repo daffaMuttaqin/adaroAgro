@@ -5,18 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./tailwind/output.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5VMM94XDC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-Z5VMM94XDC');
+    </script>
+    
     <!-- npx tailwindcss -i ./styles.css -o ./tailwind/output.css --watch -->
     <title>Adaro Agro</title>
 </head>
-<body class="min-h-screen bg-white">
+
+<body>
     <!-- Navbar -->
     <header class="fixed w-full z-30 bg-bgNavbar shadow-md">
         <div class="container m-auto py-3 lg:py-4 lg:h-auto">
             <div class="flex flex-wrap items-center justify-between">
                 <div class="relative z-50 w-full flex items-center justify-between lg:w-auto">
-                    <!-- logo -->
+                    <!-- logo Adaro Agro-->
                     <a href="./index.html">
-                        <img src="./assets/img/logo.png" alt="Logo Adaro Agro" class="w-10 pl-2 ml-4 lg:px-0 ">
+                        <img src="./assets/img/Adaro Agro.png" alt="Adaro Agro" class="lg:w-9 w-8 lg:ml-4 ml-6 lg:pl-0 ">
                     </a>
                     <!-- btn menu -->
                     <button id="hamburger" class="relative w-10 h-10 lg:hidden">
@@ -26,14 +43,14 @@
                 </div>
 
                 <div id="navlinks" class="hidden z-50 w-full px-6 bg-bgNavbar lg:block lg:bg-transparent lg:w-auto">
-                    <ul class="pt-4 pb-6 text-lg lg:flex lg:items-center lg:space-x-10 lg:pt-0 lg:pb-0 duration-300">
+                    <ul class="pt-4 pb-6 text-sm lg:flex lg:items-center lg:space-x-10 lg:pt-0 lg:pb-0 duration-300">
                         <li>
                             <a href="./index.html" class="text-white font-poppins border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
                                 <span>Home</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./products.html" class="text-white font-poppins border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
+                            <a href="/index.html#products" class="text-white font-poppins border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
                                 <span>Products</span>
                             </a>
                         </li>
@@ -54,7 +71,7 @@
                         </li>
                         <li class="mt-4 lg:mt-0">
                             <a href="" class="block py-3 rounded w-full lg:w-full bg-greenContactUs hover:bg-bgNavbar focus:bg-bgNavbar active:bg-bgNavbar transition" >
-                                <span class="block lg:px-5 font-semibold font-poppins text-white text-center">Contact Us</span>
+                                <span class="block lg:px-5 font-semibold text-white font-poppins text-center">Contact Us</span>
                             </a>
                         </li>
                         
@@ -63,6 +80,259 @@
             </div>
         </div>
     </header>
+
+    <!-- Main Content -->
+    <div class="h-full w-full">  
+        <!-- Image Slider with swiper js -->
+        <div class="swiper w-full">
+            <!-- Additional required wrapper -->
+            
+            <!-- ADARO AGRO -->
+            <!-- <div id="info" class="z-40 absolute top-1/2 left-1/2 -translate-x-1/2">
+              <h2 class="text-white font-montserrat font-medium lg:text-6xl md:text-3xl text-xl lg:ml-0 md:ml-5 ml-2 uppercase tracking-wide">ADARO AGRO</h2>
+              <div class="flex py-4 w-full justify-center"> -->
+                  <!-- Garis hijau dibawah ADARO AGRO -->
+                  <!-- <div class="inset-0 lg:h-1 h-0.5 rounded lg:w-16 md:w-8 w-4 bg-greenContactUs"></div>
+              </div>
+              <p class="lg:text-3xl md:text-xl text-xs text-white font-montserrat font-thin lg:px-12 md:px-6 px-2 "> <em>"We bring local farmer <br> products to the world"</em></p>
+            </div> -->
+            <div class="swiper-wrapper mt-16 lg:mt-20 z-40">
+              <!-- Slides 1 -->
+              <div class="swiper-slide"><img class="object-center object-cover w-full h-full" src="./assets/img/AboutUs/About Us-min.png" alt=""></div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+
+        </div>
+        <!-- End Image Slider -->
+        
+        <div class="h-auto w-full bg-white absolute lg:mt-24 mt-20 justify-center">
+            <!-- Judul -->
+            <div class="h-full">
+                <!-- Judul About Us -->
+                <div class="w-full h-full lg:mt-24 text-center text-greenAgro font-montserrat font-extrabold lg:text-5xl text-3xl">
+                    <span class="text-white bg-greenAgro rounded-md py-2 px-3">About</span> Our Company
+                </div>
+                <br>
+                <div class="text-lg font-poppins font-normal text-black lg:pt-16 lg:px-96 px-4 text-justify lg:text-center">PT Adaro Global Sinergi (Adaro Agro) is a company engaged in the export trade based in North Sumatera Indonesia which currently focuses on agricultural products. We believe that success in commodities trading comes through genuine long-term commitment to 
+                    all elements in the production and trading process.
+                </div>
+                <div class="flex m-auto ab justify-center lg:mt-16 mt-8">
+                    <a href="https://www.instagram.com/adaroagro/">
+                        <img src="./assets/img/AboutUs/Instagram2.png" alt="Instagram" class="w-9 mx-5 hover:scale-125 duration-300 m-auto">
+                    </a>
+                    <a href="https://www.facebook.com/people/Adaro-Agro/100076914482887/">
+                        <img src="./assets/img/AboutUs/facebook2.png" alt="Facebook" class="w-9 mx-5 hover:scale-125 duration-300 m-auto">
+                    </a>
+                    <a href="https://www.linkedin.com/company/pt-adaro-global-sinergi/">
+                        <img src="./assets/img/AboutUs/linkedin2.png" alt="Linkedin" class="w-9 mx-5 hover:scale-125 duration-300 m-auto">
+                    </a>
+                </div>
+            </div>
+
+            <!--                                                        Why Chose Us                                                        -->
+
+            <div  class="w-full h-full text-center lg:mt-28 mt-10 ">
+                <!-- Judul About Us -->
+                <div class="w-full h-full lg:mt-36 mt-20 text-center text-greenAgro font-montserrat font-extrabold lg:text-5xl text-3xl">Why Chose 
+                    <span class="text-white bg-greenAgro rounded-md py-2 px-3">Us?</span>
+                </div>
+
+                <!-- Grid -->
+                <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 grid-flow-row lg:grid-flow-row md:grid-flow-row gap-4 w-full m-auto lg:mt-20 mt-10 justify-center">
+                    <!-- Integrity -->
+                    <div>
+                        <img src="./assets/img/AboutUs/Engineer.png" alt="Integrity" class="m-auto rounded-xl hover:scale-125 duration-300">
+                        <!-- Deskripsi Product -->
+                        <h1 class="text-blackSeeDetails font-poppins font-extrabold lg:text-2xl text-xl py-4">INTEGRITY</h1>
+                        <div class="m-auto lg:w-8/12 w-9/12 bg-white text-blackText font-poppins font-normal lg:text-center text-justify lg:text-lg md:text-lg text-sm leading-8">
+                            Being honest and showing a consistent and uncompromising adherence to strong moral and ethical principles and values. Integrity is one of our most cherished assets. It must not be compromised
+                        </div>
+                    </div>
+
+                    <!-- Quality -->
+                    <div>
+                        <!-- Gambar -->
+                        <img src="./assets/img/AboutUs/Award.png" alt="" class=" m-auto rounded-xl hover:scale-125 duration-300">
+                        <!-- Deskripsi Product -->
+                        <h1 class="text-blackSeeDetails font-poppins font-extrabold lg:text-2xl text-xl py-4">QUALITY</h1>
+                        <div class="m-auto lg:w-8/12 w-9/12 bg-white text-blackText font-poppins font-normal lg:text-center text-justify lg:text-lg md:text-lg text-sm leading-8">
+                            <p >High quality means higher customer satisfaction and a greater chance of continued partnership. We always try to maintain our products standards</p>  
+                        </div>
+                    </div>
+
+                    <!-- Commitment -->
+                    <div>
+                        <!-- Gambar -->
+                        <img src="./assets/img/AboutUs/Partnership.png" alt="Commitment" class=" m-auto rounded-xl hover:scale-125 duration-300">
+                        <!-- Deskripsi Product -->
+                        <h1 class="text-blackSeeDetails font-poppins font-extrabold lg:text-2xl text-xl py-4">COMMITMENT</h1>
+                        <div class="m-auto lg:w-8/12 w-9/12 bg-white text-blackText font-poppins font-normal lg:text-center text-justify lg:text-lg md:text-lg text-sm leading-8">
+                            <p class="">Making a commitment involves dedicating ourself to work with you. Commitment creates a bond of mutual trust. It creates an understanding and obligation between you and us</p>
+                        </div>
+                    </div>
+
+                    <div></div>
+                    <!-- INNOVATION -->
+                    <div>
+                        <!-- Gambar -->
+                        <img src="./assets/img/AboutUs/Idea.png" alt="INNOVATION" class=" m-auto rounded-xl hover:scale-125 duration-300">
+                        <!-- Deskripsi Product -->
+                        <h1 class="text-blackSeeDetails font-poppins font-extrabold lg:text-2xl text-xl py-4">INNOVATION</h1>
+                        <div class="m-auto lg:w-8/12 w-9/12 bg-white text-blackText font-poppins font-normal lg:text-center text-justify lg:text-lg md:text-lg text-sm leading-8">
+                            <p >Innovation means the ability to create something better and launch it to the world. We Commited to always innovating in all fields for progress and success</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full h-full lg:mt-36 mt-10 mb-10 text-center text-greenAgro font-montserrat font-extrabold lg:text-5xl text-3xl">Our Team</div>
+                <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 grid-flow-row lg:grid-flow-row md:grid-flow-row gap-y-10 lg:mt-20 lg:px-72">
+                    <!-- Wapi -->
+                    <div class="hover:scale-110 duration-300">
+                        <img src="./assets/img/AboutUs/Photo Profil Edit Daffa.jpg" alt="Muhammad Hibatul Wafi" class="m-auto rounded-3xl w-72 duration-300">
+                        <h1 class="text-blackSeeDetails font-poppins font-semibold lg:text-2xl text-xl py-2">Muhammad Hibatul Wafi Bin Rahmat</h1>
+                        <div class="m-auto text-black font-poppins font-normal text-center lg:text-lg md:text-lg text-sm leading-8">
+                            President Director
+                        </div>
+                        <div class="flex sticky m-auto justify-center lg:mt-5 mt-3">
+                            <a href="https://www.instagram.com/mhibwafi/">
+                                <img src="./assets/img/AboutUs/Instagram2.png" alt="Instagram" class="w-9 mx-5 hover:scale-110 duration-200 m-auto">
+                            </a>
+                            <a href="https://www.linkedin.com/in/muhammad-hibatul-wafi-bin-rahmat-821561229/">
+                                <img src="./assets/img/AboutUs/linkedin2.png" alt="Linkedin" class="w-9 mx-5 hover:scale-110 duration-200 m-auto">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Dapot -->
+                    <div class="hover:scale-110 duration-300">
+                        <img src="./assets/img/AboutUs/Photo Profil Edit Daffa.jpg" alt="Ahmad Daffa Muttaqin" class="m-auto rounded-3xl w-72 duration-300">
+                        <h1 class="text-blackSeeDetails font-poppins font-semibold lg:text-2xl text-xl py-2">Ahmad Daffa Muttaqin</h1>
+                        <div class="m-auto text-black font-poppins font-normal text-center lg:text-lg md:text-lg text-sm leading-8">
+                            Operating Director
+                        </div>
+                        <div class="flex sticky m-auto justify-center lg:mt-5 mt-3">
+                            <a href="https://www.instagram.com/daffamuttaqin/">
+                                <img src="./assets/img/AboutUs/Instagram2.png" alt="Instagram" class="w-9 mx-5 hover:scale-110 duration-200 m-auto">
+                            </a>
+                            <a href="https://www.linkedin.com/in/ahmad-daffa-muttaqin-63a7b8228/">
+                                <img src="./assets/img/AboutUs/linkedin2.png" alt="Linkedin" class="w-9 mx-5 hover:scale-110 duration-200 m-auto">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Btn Collaborate -->
+                <div class="w-full absolute lg:mt-32 mt-10 ">
+                    <div>
+                        <a  href="https://api.whatsapp.com/send?phone=6282273776665" style="background-image: url(./assets/img/collaborate.png);" 
+                            class="bg-greenAgro hover:bg-greenOurProduct text-white w-auto m-auto font-montserrat font-semibold lg:p-8 p-3 rounded-2xl lg:text-4xl md:text-2xl text-md bg-no-repeat bg-left hover:bg-opacity-80 duration-300">
+                            Ready To Collaborate? <span class="font-extrabold">Contact Us Now</span>
+                        </a>
+
+                        <!-- Support By -->
+                        <div class="lg:mt-28 md:mt-10 mt-10">
+                            <div class="lg:text-xl text-sm font-montserrat font-bold text-supportBy tracking-wide">
+                                Support By
+                            </div>
+                            <div class="flex w-full justify-center mt-3">
+                                <img class="mx-3 lg:h-24 h-10" src="./assets/img/Kementerian Perdagangan 1.png" alt="Kementrian Perdagangan">
+                                <img class="mx-3 lg:h-24 h-10" src="./assets/img/LOGO_ppei_foot 4.png" alt="PPEI">
+                                <img class="mx-3 lg:h-24 h-10" src="./assets/img/LOGO FTA 1.png" alt="FTA">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="lg:mt-28 md:mt-10 mt-10 bg-bgNavbar">
+                        <div class="w-full px-5">
+                            <div class="text-white grid lg:grid-cols-4 md:grid-cols-4 grid-cols-1 grid-flow-row gap-1 gap-y-3 pb-8 w-full">
+                                <div class="mt-14">
+                                    <img src="./assets/img/Adaro Agro.png" alt="Adaro Agro" class="h-16 m-auto pb-2">
+                                    <div class="flex m-auto justify-center mt-4">
+                                        <a href="https://www.instagram.com/adaroagro/">
+                                            <img src="./assets/img/Instagram.png" alt="Instagram" class="w-8 mx-5 hover:w-9 duration-200">
+                                        </a>
+                                        <a href="https://www.facebook.com/people/Adaro-Agro/100076914482887/">
+                                            <img src="./assets/img/facebook.png" alt="Facebook" class="w-8 mx-5 hover:w-9 duration-200">
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/pt-adaro-global-sinergi/">
+                                            <img src="./assets/img/linkedin.png" alt="Linkedin" class="w-8 mx-5 hover:w-9 duration-200">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col mt-14 font-poppins font-normal text-sm text-left">
+                                    <div class="font-montserrat text-base font-extrabold pb-2">Terms & Conditions</div>
+                                    <a href="./termsAndCondition.html" class="pb-2 w-fit text-sm hover:text-base duration-300">Payment Methods</a>
+                                    <a href="./termsAndCondition.html" class="pb-2 w-fit text-sm hover:text-base duration-300">Order Terms</a>
+                                    <a href="./termsAndCondition.html" class="pb-2 w-fit text-sm hover:text-base duration-300">Sample Orders</a>
+                                    <a href="./termsAndCondition.html" class=" w-fit text-sm hover:text-base duration-300">Price Terms</a>
+                                </div>
+                                <div class="flex flex-col mt-14 font-poppins font-normal text-sm text-left">
+                                    <div class="font-montserrat text-base font-extrabold pb-2">About Us</div>
+                                    <a href="/aboutUs.html" class="pb-2 w-fit text-sm hover:text-base duration-300">News</a>
+                                    <a href="/index.html#products" class="w-fit text-sm hover:text-base duration-300">Products</a>
+                                </div>
+                                <div class="mt-14  w-fit">
+                                    <div class="grid grid-cols-5 grid-flow-row gap-1">
+                                        <div class="justify-self-start">
+                                            <img src="./assets/img/Location.png" alt="Location" class="w-7 m-auto">
+                                        </div>
+                                        <div class="font-poppins font-normal text-sm text-left col-span-4">
+                                            Jl. Patriot Komplek Rencong Mas No. 33 <br>Kecamatan Medan Sunggal, Kota Medan <br>Provinsi Sumatera Utara, Indonesia. <br>20128
+                                        </div>
+                                        <div class="justify-self-start">
+                                            <img src="./assets/img/Whatsapp.png" alt="Whatsapp" class="w-8 m-auto">
+                                        </div>
+                                        <div class="font-poppins font-normal text-sm text-left col-span-4">
+                                            +62 822 7377 6665
+                                        </div>
+                                        <div class="justify-self-start">
+                                            <img src="./assets/img/Email.png" alt="Email" class="w-7 m-auto">
+                                        </div>
+                                        <div class="font-poppins font-normal text-sm text-left col-span-4">
+                                            support@adaroagro.com
+                                        </div>
+                                        <div></div>
+                                        <div class="text-greenAgro font-poppins font-normal text-sm text-left col-span-4 hover:scale-110 duration-300">
+                                            <a href="https://maps.app.goo.gl/F7GsJAVotwxCPaoW8">
+                                                <div>MAP & DIRECTION</div>
+                                                <div class="bg-greenAgro w-full inset-0 h-1 rounded-lg"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="inset-0 lg:h-0.5 h-0.5 rounded w-full bg-gray-200 px-8 bg-opacity-80 my-3"></div>
+                            </div>
+                            <div class="text-white font-poppins font-normal text-xs text-opacity-80">
+                                <div class="mb-2">
+                                    © 2021 <span class="font-bold">PT Adaro Global Sinergi</span>
+                                </div>
+                                <div class="pb-14">
+                                    Copyright© 2021 All Right Reserved
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/js/add.js"></script>
+    <script src="./assets/js/swiper.js"></script>
 </body>
 </html>

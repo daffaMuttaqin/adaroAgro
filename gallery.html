@@ -5,18 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./tailwind/output.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5VMM94XDC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-Z5VMM94XDC');
+    </script>
+    
     <!-- npx tailwindcss -i ./styles.css -o ./tailwind/output.css --watch -->
     <title>Adaro Agro</title>
 </head>
-<body class="min-h-screen bg-white">
+
+<body>
     <!-- Navbar -->
     <header class="fixed w-full z-30 bg-bgNavbar shadow-md">
         <div class="container m-auto py-3 lg:py-4 lg:h-auto">
             <div class="flex flex-wrap items-center justify-between">
                 <div class="relative z-50 w-full flex items-center justify-between lg:w-auto">
-                    <!-- logo -->
+                    <!-- logo Adaro Agro-->
                     <a href="./index.html">
-                        <img src="./assets/img/logo.png" alt="Logo Adaro Agro" class="w-10 pl-2 ml-4 lg:px-0 ">
+                        <img src="./assets/img/Adaro Agro.png" alt="Adaro Agro" class="lg:w-9 w-8 lg:ml-4 ml-6 lg:pl-0 ">
                     </a>
                     <!-- btn menu -->
                     <button id="hamburger" class="relative w-10 h-10 lg:hidden">
@@ -26,14 +43,14 @@
                 </div>
 
                 <div id="navlinks" class="hidden z-50 w-full px-6 bg-bgNavbar lg:block lg:bg-transparent lg:w-auto">
-                    <ul class="pt-4 pb-6 text-lg lg:flex lg:items-center lg:space-x-10 lg:pt-0 lg:pb-0 duration-300">
+                    <ul class="pt-4 pb-6 text-sm lg:flex lg:items-center lg:space-x-10 lg:pt-0 lg:pb-0 duration-300">
                         <li>
                             <a href="./index.html" class="text-white font-poppins border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
                                 <span>Home</span>
                             </a>
                         </li>
                         <li>
-                            <a href="./products.html" class="text-white font-poppins border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
+                            <a href="./index.html#products" class="text-white font-poppins border-b-2 border-transparent lg:hover:border-greenAgro lg:hover:pb-1 hover:text-greenAgro block transition duration-300">
                                 <span>Products</span>
                             </a>
                         </li>
@@ -63,6 +80,114 @@
             </div>
         </div>
     </header>
+
+    <div class="h-full w-full">  
+        <!-- Image Slider with swiper js -->
+        <div class="swiper mySwiper1 py-14">
+            <!-- Judul Gallery -->
+            <div class="w-full h-full lg:mt-36 mt-24 text-center text-greenAgro font-montserrat font-extrabold lg:text-6xl text-4xl">Gallery</div>
+            <!-- Mulai masuk bagian image slider -->
+            <div class="swiper-wrapper w-fit lg:mt-16 mt-10">
+              <div class="swiper-slide">
+                <img src="/assets/img/Landing Page/1-min.png" class="lg:w-1/2 w-10/12 block m-auto rounded-xl">
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/Landing Page/2-min.png" class="lg:w-1/2 w-10/12 block m-auto rounded-xl">
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/Landing Page/3-min.png" class="lg:w-1/2 w-10/12 block m-auto rounded-xl">
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/Landing Page/4-min.png" class="lg:w-1/2 w-10/12 block m-auto rounded-xl">
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/Landing Page/5-min.png" class="lg:w-1/2 w-10/12 block m-auto rounded-xl">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        <!-- End Image Slider -->
+    
+    </div>
+    
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/js/add.js"></script>
+    <script src="./assets/js/gallery.js"></script>
+</body>
+
+<body class="w-full h-full">
+    <div class="lg:mt-28 md:mt-10 mt-10 bg-bgNavbar">
+        <div class="w-full text-center px-5">
+            <div class="text-white grid lg:grid-cols-4 md:grid-cols-4 grid-cols-1 grid-flow-row gap-1 gap-y-3 pb-8 w-full">
+                <div class="mt-14">
+                    <img src="./assets/img/Adaro Agro.png" alt="Adaro Agro" class="h-16 m-auto pb-2">
+                    <div class="flex m-autu justify-center mt-4">
+                        <a href="https://www.instagram.com/adaroagro/">
+                            <img src="./assets/img/Instagram.png" alt="" class="w-8 mx-5 hover:w-9 duration-200">
+                        </a>
+                        <a href="https://www.facebook.com/people/Adaro-Agro/100076914482887/">
+                            <img src="./assets/img/facebook.png" alt="" class="w-8 mx-5 hover:w-9 duration-200">
+                        </a>
+                        <a href="https://www.linkedin.com/company/pt-adaro-global-sinergi/">
+                            <img src="./assets/img/linkedin.png" alt="" class="w-8 mx-5 hover:w-9 duration-200">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col mt-14 font-poppins font-normal text-sm text-left">
+                    <div class="font-montserrat text-base font-extrabold pb-2">Terms & Conditions</div>
+                    <a href="./termsAndCondition.html" class="pb-2 w-fit text-sm hover:text-base duration-300">Payment Methods</a>
+                    <a href="./termsAndCondition.html" class="pb-2 w-fit text-sm hover:text-base duration-300">Order Terms</a>
+                    <a href="./termsAndCondition.html" class="pb-2 w-fit text-sm hover:text-base duration-300">Sample Orders</a>
+                    <a href="./termsAndCondition.html" class=" w-fit text-sm hover:text-base duration-300">Price Terms</a>
+                </div>
+                <div class="flex flex-col mt-14 font-poppins font-normal text-sm text-left">
+                    <div class="font-montserrat text-base font-extrabold pb-2">About Us</div>
+                    <a href="/aboutUs.html" class="pb-2 w-fit text-sm hover:text-base duration-300">News</a>
+                    <a href="/index.html#products" class="w-fit text-sm hover:text-base duration-300">Products</a>
+                </div>
+                <div class="mt-14  w-fit">
+                    <div class="grid grid-cols-5 grid-flow-row gap-1">
+                        <div class="justify-self-start">
+                            <img src="./assets/img/Location.png" alt="Location" class="w-7 m-auto">
+                        </div>
+                        <div class="font-poppins font-normal text-sm text-left col-span-4">
+                            Jl. Patriot Komplek Rencong Mas No. 33 <br>Kecamatan Medan Sunggal, Kota Medan <br>Provinsi Sumatera Utara, Indonesia. <br>20128
+                        </div>
+                        <div class="justify-self-start">
+                            <img src="./assets/img/Whatsapp.png" alt="Whatsapp" class="w-8 m-auto">
+                        </div>
+                        <div class="font-poppins font-normal text-sm text-left col-span-4">
+                            +62 822 7377 6665
+                        </div>
+                        <div class="justify-self-start">
+                            <img src="./assets/img/Email.png" alt="Email" class="w-7 m-auto">
+                        </div>
+                        <div class="font-poppins font-normal text-sm text-left col-span-4">
+                            support@adaroagro.com
+                        </div>
+                        <div></div>
+                        <div class="text-greenAgro font-poppins font-normal text-sm text-left col-span-4 hover:scale-110 duration-300">
+                            <a href="https://maps.app.goo.gl/F7GsJAVotwxCPaoW8">
+                                <div>MAP & DIRECTION</div>
+                                <div class="bg-greenAgro w-full inset-0 h-1 rounded-lg"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="inset-0 lg:h-0.5 h-0.5 rounded w-full bg-gray-200 px-8 bg-opacity-80 my-3"></div>
+            </div>
+            <div class="text-white font-poppins font-normal text-xs text-opacity-80">
+                <div class="mb-2">
+                    © 2021 <span class="font-bold">PT Adaro Global Sinergi</span>
+                </div>
+                <div class="pb-14">
+                    Copyright© 2021 All Right Reserved
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
