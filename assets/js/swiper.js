@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
     speed: 400,
     spaceBetween: 0,
     centeredSlides: true,
+    loop: true,
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,

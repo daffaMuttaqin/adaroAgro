@@ -4,6 +4,7 @@ var swiper = new Swiper(".mySwiperProducts", {
     spaceBetween: 0,
     centeredSlides: true,
     grabCursor: true,
+    loop: true,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
