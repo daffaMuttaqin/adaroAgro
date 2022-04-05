@@ -530,8 +530,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 40;
 }
 
-.col-span-1{
-  grid-column: span 1 / span 1;
+.col-span-2{
+  grid-column: span 2 / span 2;
 }
 
 .col-span-4{
@@ -540,10 +540,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .m-auto{
   margin: auto;
-}
-
-.m-5{
-  margin: 1.25rem;
 }
 
 .mx-5{
@@ -639,6 +635,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
+.mt-7{
+  margin-top: 1.75rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mr-1{
+  margin-right: 0.25rem;
+}
+
 .mt-24{
   margin-top: 6rem;
 }
@@ -699,6 +707,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 15rem;
 }
 
+.h-72{
+  height: 18rem;
+}
+
 .w-full{
   width: 100%;
 }
@@ -755,6 +767,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-20{
   width: 5rem;
+}
+
+.w-28{
+  width: 7rem;
 }
 
 .w-10\/12{
@@ -855,9 +871,9 @@ Ensure the default browser behavior of the `hidden` attribute.
        column-gap: 0.5rem;
 }
 
-.gap-x-4{
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+.gap-x-8{
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .justify-self-start{
@@ -1104,14 +1120,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-semibold{
@@ -1183,6 +1199,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(17 17 23 / var(--tw-text-opacity));
 }
 
+.text-supportBy{
+  --tw-text-opacity: 1;
+  color: rgb(145 151 159 / var(--tw-text-opacity));
+}
+
 .text-greenOurProduct{
   --tw-text-opacity: 1;
   color: rgb(153 227 105 / var(--tw-text-opacity));
@@ -1191,11 +1212,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-300{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-supportBy{
-  --tw-text-opacity: 1;
-  color: rgb(145 151 159 / var(--tw-text-opacity));
 }
 
 .text-opacity-80{
@@ -1346,8 +1362,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-auto-flow: column;
   }
 
-  .md\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .md\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .md\:grid-cols-2{
@@ -1358,8 +1374,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:grid-rows-4{
-    grid-template-rows: repeat(4, minmax(0, 1fr));
+  .md\:grid-rows-1{
+    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
   .md\:px-6{
@@ -1392,24 +1408,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.5rem;
   }
 
-  .md\:text-gray-300{
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219 / var(--tw-text-opacity));
-  }
-
   .md\:text-blackText{
     --tw-text-opacity: 1;
     color: rgb(17 17 23 / var(--tw-text-opacity));
+  }
+
+  .md\:text-gray-300{
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity));
   }
 }
 
 @media (min-width: 1024px){
   .lg\:top-1\/3{
     top: 33.333333%;
-  }
-
-  .lg\:col-span-2{
-    grid-column: span 2 / span 2;
   }
 
   .lg\:my-24{
@@ -1478,8 +1490,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 2.25rem;
   }
 
+  .lg\:mt-3{
+    margin-top: 0.75rem;
+  }
+
   .lg\:mt-72{
     margin-top: 18rem;
+  }
+
+  .lg\:ml-36{
+    margin-left: 9rem;
+  }
+
+  .lg\:mr-36{
+    margin-right: 9rem;
+  }
+
+  .lg\:mt-40{
+    margin-top: 10rem;
   }
 
   .lg\:block{
@@ -1550,6 +1578,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 24rem;
   }
 
+  .lg\:w-40{
+    width: 10rem;
+  }
+
   .lg\:w-7{
     width: 1.75rem;
   }
@@ -1562,8 +1594,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-auto-flow: column;
   }
 
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .lg\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-2{
@@ -1574,8 +1606,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:grid-rows-4{
-    grid-template-rows: repeat(4, minmax(0, 1fr));
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-1{
+    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:items-center{
@@ -1688,6 +1728,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-center{
     text-align: center;
+  }
+
+  .lg\:text-justify{
+    text-align: justify;
   }
 
   .lg\:text-6xl{
