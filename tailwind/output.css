@@ -781,6 +781,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.25rem;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
+.w-3\/4{
+  width: 75%;
+}
+
+.grow{
+  flex-grow: 1;
+}
+
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: var(--tw-transform);
